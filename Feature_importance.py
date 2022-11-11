@@ -16,7 +16,7 @@ from sklearn.inspection import permutation_importance
 from sklearn.metrics import f1_score
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
-
+import seaborn as sns
 
 import pickle
 with open('rf_bow', 'rb') as f:
