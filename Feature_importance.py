@@ -31,12 +31,7 @@ test_labels = df_test.featured
 # Calculate feature importance without clusters so that we can rank features within clusters later
 df = df_test
 df = df.drop('featured', axis=1)
-#content = df.content
-#df = df.drop('content', axis=1)
 df = df.replace(np. nan,0)
-#df= df.drop('featured_posts_user', axis=1)
-#df= df.drop('respect_count', axis=1)
-#df= df.drop('reply_count', axis=1)
 df= df.drop('accepted_count_user', axis=1)
 df= df.drop('rejected_count_user', axis=1)
 df= df.drop('total_reply_posts_user', axis=1)
