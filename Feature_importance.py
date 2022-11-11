@@ -13,6 +13,9 @@ from scipy.stats import spearmanr
 from scipy.cluster import hierarchy
 from scipy.spatial.distance import squareform
 from sklearn.inspection import permutation_importance
+from sklearn.metrics import f1_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
 
 
 import pickle
