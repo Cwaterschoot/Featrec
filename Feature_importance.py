@@ -28,30 +28,15 @@ train_labels = df_train.featured
 test_labels = df_test.featured
 
 ###########################################
-# Calculate feature importance without clusters so that we can rank features within clusters later
-df = df_test
-df = df.drop('featured', axis=1)
-df = df.replace(np. nan,0)
-df= df.drop('accepted_count_user', axis=1)
-df= df.drop('rejected_count_user', axis=1)
-df= df.drop('total_reply_posts_user', axis=1)
-df= df.drop('delta_seconds', axis=1)
-df= df.drop('ratio_reply', axis=1)
-df =df.drop(df.columns[0], axis=1)
-print('Getting original importance')
-perm_importance = permutation_importance(rf1, df, test_labels, scoring='f1', n_repeats = 3, random_state=1234, n_jobs=-1)
-imp2 = pd.DataFrame(perm_importance.importances_mean)
-feature_names = list(df)
-imp2['var'] = feature_names
-
+# Import original feature importance
+imp2 = pd.read_excel('original_feature_importance.xlsx')
 
 
 ##########################################
 
 
 
-train_labels = df_train.featured
-test_labels = df_test.featured
+
 frames = [df_train, df_test]
 df = pd.concat(frames)
 df = df.drop('featured', axis=1)
