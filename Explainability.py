@@ -160,6 +160,7 @@ imp['var'] = feature_names
 imp = imp.sort_values(by=[0], ascending=False)
 imp = imp.head(10)
 # Print out top 10 most important features
+print('Top 10 most important features + MDF1 score:')
 print(imp)
 
 # FOR PLOT:
