@@ -1,4 +1,4 @@
-# Featrec
+# Hybrid moderation in the newsroom: Recommending featured posts to content moderators
 Feature Recommendation of NUjij posts
 
 This repository contains the scripts used for the paper: Hybrid moderation in the newsroom: Recommending featured posts to content
