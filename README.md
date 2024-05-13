@@ -1,7 +1,6 @@
-# Hybrid moderation in the newsroom: Recommending featured posts to content moderators
+# A Time-robust Group Recommender for Featured Comments on News Platforms
 Feature Recommendation of NUjij posts
 
-This repository contains the scripts used for the paper: Hybrid moderation in the newsroom: Recommending featured posts to content
-moderators.
+This repository contains the scripts used for the paper: A Time-robust Group Recommender for Featured Comments on News Platforms (Frontiers in Big Data).
 
-Full training data will be made available on publication.
+Full training data can be requested: cedric.waterschoot@meertens.knaw.nl
